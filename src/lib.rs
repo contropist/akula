@@ -18,6 +18,7 @@ pub mod adapter;
 mod bitmapdb;
 mod changeset;
 mod common;
+mod crypto;
 mod dbutils;
 pub mod downloader;
 pub mod kv;
