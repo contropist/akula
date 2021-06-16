@@ -37,7 +37,7 @@ where
 }
 
 pub struct Environment<E: EnvironmentKind> {
-    inner: ::mdbx::GenericEnvironment<E>,
+    inner: ::mdbx::Environment<E>,
 }
 
 impl<E: EnvironmentKind> Environment<E> {
@@ -93,7 +93,7 @@ impl<E: EnvironmentKind> Environment<E> {
 }
 
 impl<E: EnvironmentKind> Deref for Environment<E> {
-    type Target = ::mdbx::GenericEnvironment<E>;
+    type Target = ::mdbx::Environment<E>;
 
     fn deref(&self) -> &Self::Target {
         &self.inner

@@ -30,7 +30,7 @@ pub mod txdb;
 
 pub use changeset::*;
 pub use kv::{
-    mdbx::*,
+    mdbx::{table_sizes as mdbx_table_sizes, Environment as MdbxEnvironment},
     new_mem_database,
     remote::{kv_client::KvClient as RemoteKvClient, RemoteCursor, RemoteTransaction},
     traits::{
